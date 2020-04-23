@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Potion
   m_EditorClassIdentifier: 
   objectName: Potion
-  healthRestore: 0
-  description: 
+  healthRestore: 5
+  description: Este es un objeto que recupera vida al jugador.
