@@ -29,7 +29,7 @@ public class DialogTextBox : MonoBehaviour
     {
         int i = 0;
 
-        while(i < Message.Length -1)
+        while(i < Message.Length)
         {
             dialog.text += message[i];
             i++;
