@@ -8,7 +8,10 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] Player player;
 
+    bool isInCombat;
+
     public Player Player { get => player; }
+    public bool IsInCombat { get => isInCombat; set => isInCombat = value;}
 
     void Awake() {
         if(!instance)
@@ -21,5 +24,10 @@ public class GameManager : MonoBehaviour
         }
 
         DontDestroyOnLoad(gameObject);    
+    }
+
+    public void StartCombat()
+    {
+        player.Anim.SetLayerWeight(1, 1);
     }
 }
